@@ -26,8 +26,6 @@ function askQuestion() {
     candidateAnswers[i] = input.question(orderQuestions[i] + questions[i] + '\nYour answer: ');
     console.log(`Correct answer: ${correctAnswers[i]}`);
   }
-
-
 }
 
 function gradeQuiz(candidateAnswers) {
@@ -37,7 +35,7 @@ let exam = [];
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 for (let i = 0; i < correctAnswers.length; i++) {
 if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()) {
-   correct += +1;
+   correct += 1;
    grade = correct/correctAnswers.length*100;
    if (grade >= 80) {
      exam = "PASSED";
