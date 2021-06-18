@@ -16,14 +16,14 @@ let candidateName = [];
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
 candidateName = input.question('Please enter your name: ');
-// }
+}
 console.log(askForName());
 
 // function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   //candidateAnswer = input.question(question);
   // candidateAnswer = input.question(question + '\nYour answer: ');
-}
+//}
 
 // console.log(askQuestion());
   //candidateAnswer = input.question(question);
@@ -82,14 +82,14 @@ console.log(`>>> Overall Grade: ${grade}% (${correct} of ${correctAnswers.length
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
-module.exports = {
-  candidateName: candidateName,
-  question: question,
-  correctAnswer: correctAnswer,
-  candidateAnswer: candidateAnswer,
-  questions: questions,
-  correctAnswers: correctAnswers,
-  candidateAnswers: candidateAnswers,
-  gradeQuiz: gradeQuiz,
-  runProgram: runProgram
-};
+// module.exports = {
+// candidateName: candidateName,
+// question: question,
+// correctAnswer: correctAnswer,
+// candidateAnswer: candidateAnswer,
+// questions: questions,
+// correctAnswers: correctAnswers,
+// candidateAnswers: candidateAnswers,
+// gradeQuiz: gradeQuiz,
+// runProgram: runProgram
+// };
