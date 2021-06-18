@@ -82,14 +82,14 @@ console.log(`>>> Overall Grade: ${grade}% (${correct} of ${correctAnswers.length
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
-// module.exports = {
-// candidateName: candidateName,
-// question: question,
-// correctAnswer: correctAnswer,
-// candidateAnswer: candidateAnswer,
-// questions: questions,
-// correctAnswers: correctAnswers,
-// candidateAnswers: candidateAnswers,
-// gradeQuiz: gradeQuiz,
-// runProgram: runProgram
-// };
+module.exports = {
+candidateName: candidateName,
+question: question,
+correctAnswer: correctAnswer,
+candidateAnswer: candidateAnswer,
+questions: questions,
+correctAnswers: correctAnswers,
+candidateAnswers: candidateAnswers,
+gradeQuiz: gradeQuiz,
+runProgram: runProgram
+};
