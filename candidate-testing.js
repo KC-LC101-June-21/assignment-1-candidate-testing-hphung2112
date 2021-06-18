@@ -31,15 +31,24 @@ function askQuestion() {
 }
 
 function gradeQuiz(candidateAnswers) {
-
+let correct = 0;
+let grade = 0;
+let exam = [];
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-
-
-  let grade;
-  
-
-  return grade;
+for (let i = 0; i < correctAnswers.length; i++) {
+if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()) {
+   correct += +1;
+   grade = correct/correctAnswers.length*100;
+   if (grade >= 80) {
+     exam = "PASSED";
+   } else {
+     exam = "FAILED";
+   }
 }
+} 
+  return console.log(`>>> Overall Grade: ${grade}% (${correct} of ${correctAnswers.length} responses correct)<<< \n>>> Status: ${exam} <<<`);
+}
+
 
 function runProgram() {
   askForName();
@@ -49,23 +58,8 @@ function runProgram() {
   gradeQuiz(this.candidateAnswers);
 }
 
-// let correct = 0;
-// let grade = 0;
-// let exam = [];
-
 // console.log(askQuestion());
 
-// for (let i = 0; i < correctAnswers.length; i++) {
-// if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()) {
-//    correct += +1;
-//    grade = correct/correctAnswers.length*100;
-//    if (grade >= 80) {
-//      exam = "PASSED";
-//    } else {
-//      exam = "FAILED";
-//    }
-// }
-// }
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
 module.exports = {
