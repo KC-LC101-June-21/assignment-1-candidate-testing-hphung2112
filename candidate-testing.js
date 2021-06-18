@@ -41,13 +41,13 @@ function gradeQuiz(candidateAnswers) {
   return grade;
 }
 
-// function runProgram() {
-//   askForName();
-//   // TODO 1.1c: Ask for candidate's name //
+function runProgram() {
+  askForName();
+  // TODO 1.1c: Ask for candidate's name //
   
-//   askQuestion();
-//   gradeQuiz(this.candidateAnswers);
-// }
+  askQuestion();
+  gradeQuiz(this.candidateAnswers);
+}
 
 let correct = 0;
 let grade = 0;
